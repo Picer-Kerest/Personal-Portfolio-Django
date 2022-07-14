@@ -8,7 +8,7 @@
 
 <h1 id="blogtitle" class="font-weight-bold text-center">Blog</h1>
 
-<h3 class="text-center mb-5">Максим написал {{ all_blogs.count }} {{ all_blogs.count|rupluralize:'блог, блога, блогов' }}</h3>
+<h3 class="text-center mb-5">Max has written {{ all_blogs.count }} blog{{ all_blogs.count|pluralize }}</h3>
 
 {% for blog in all_blogs %}
 <div class="row justify-content-center my-3">
